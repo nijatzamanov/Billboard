@@ -11329,6 +11329,10 @@ body.op-modal-open {
     right: 90px;
 }
 
+.login-area .right-side .top-right a:hover {
+    text-decoration: underline;
+}
+
 .login-area .right-side .title {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -11406,4 +11410,178 @@ body.op-modal-open {
 
 .login-area .right-side button.btn-sign_in:hover {
     opacity: .7;
+}
+
+/*-------------------------
+   Sign up
+-------------------------*/
+
+.register-area .right-side,
+.register-area .image {
+    min-height: 100vh;
+}
+
+.register-area .bg-image {
+    background: rgba(0, 0, 0, 0.8);
+    background-size: cover;
+    background-position: center center;
+}
+
+.register-area .left-side {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.register-area .left-side img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 68px;
+    top: 60px;
+}
+
+.register-area .left-side .title {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--color-white);
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+.register-area .right-side {
+    padding: 0 90px;
+}
+
+.register-area .right-side .top-right {
+    position: absolute;
+    top: 40px;
+    right: 90px;
+}
+
+.register-area .right-side .top-right a:hover {
+    text-decoration: underline;
+}
+
+.register-area .right-side .title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    padding-bottom: 5px;
+    color: var(--color-pink-dark);
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Segoe UI";
+    margin-bottom: 85px;
+}
+
+.register-area .right-side label {
+    color: var(--color-gray-shade);
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.register-area .right-side a.forgot-password {
+    float: right;
+}
+
+.register-area .right-side .form-group {
+    margin-bottom: 47px;
+}
+
+.register-area .right-side input[type="text"],
+.register-area .right-side input[type="password"],
+.register-area .right-side input[type="email"],
+.register-area .right-side .form-control {
+    border-radius: 5px;
+    background-color: var(--color-gray-95);
+    color: var(--color-gray-dark);
+    padding: 15px 20px;
+    width: 100%;
+    /* -- Placeholder -- */
+}
+
+.register-area .right-side input[type="text"]:hover,
+.register-area .right-side input[type="password"]:hover,
+.register-area .right-side input[type="email"]:hover,
+.register-area .right-side .form-control:hover {
+    outline: none;
+    background: var(--color-white);
+    border: 0.5px solid var(--color-gray-85);
+    box-shadow: 4px 4px 4px rgba(209, 20, 84, 0.15);
+    border-radius: 5px;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+}
+
+.register-area .right-side input:focus,
+.register-area .right-side .form-control:focus {
+    outline: none;
+    background: var(--color-white);
+    border: 0.5px solid var(--color-pink-dark);
+    box-shadow: 4px 4px 10px rgba(209, 20, 84, 0.15);
+    border-radius: 5px;
+}
+
+.register-area .right-side button.btn-sign_up {
+    width: 300px;
+    border-radius: 5px;
+    background-color: var(--color-pink-dark);
+    color: var(--color-white);
+    border: none;
+    padding: 14px 0;
+    margin-top: 27px;
+    text-align: center;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+}
+
+.register-area .right-side button.btn-sign_up:hover {
+    opacity: .7;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+}
+
+.form-control {
+    margin-top: 1em;
+}
+
+input[type="checkbox"] {
+    display: grid;
+    place-content: center;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+input[type="checkbox"]::before {
+    background-color: CanvasText;
 }
