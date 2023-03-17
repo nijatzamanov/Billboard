@@ -98,6 +98,7 @@ STYLESHEET INDEXING
     --color-mercury: #E5E5E5;
     --color-pink-dark: #D11454;
     --color-pink-light: #FFEEEE;
+    --color-pink-swan: #B2B2B2;
     --gradient-primary: linear-gradient(90deg, #ECF2F6 0%, rgba(236, 242, 246, 0) 70.31%);
     --gradient-blue: linear-gradient(145.92deg, #5956E9 20.18%, #9991FF 76.9%);
     --gradient-accent: linear-gradient(180deg, #FAB8C4 0%, #FFEDF0 100%);
@@ -11550,14 +11551,14 @@ body.op-modal-open {
 
 input[type="checkbox"] {
     appearance: none;
-    background-color: #fff;
+    background-color: var(--color-white);
     margin: 0;
     font: inherit;
-    color: currentColor;
+    color: var(--color-pink-swan);
     width: 1.15em;
     height: 1.15em;
     border: 0.15em solid currentColor;
-    border-radius: 0.15em;
+    border-radius: 5px;
     transform: translateY(-0.075em);
 }
 
@@ -11568,6 +11569,7 @@ input[type="checkbox"] {
 input[type="checkbox"] {
     display: grid;
     place-content: center;
+    padding: 5px;
 }
 
 input[type="checkbox"]::before {
