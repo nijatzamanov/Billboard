@@ -11335,18 +11335,14 @@ body.op-modal-open {
 }
 
 .login-area .right-side .title {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
     padding-bottom: 5px;
     color: var(--color-pink-dark);
-    font-weight: 600;
     text-transform: uppercase;
     text-align: center;
     font-family: "Segoe UI";
     margin-bottom: 85px;
+    font-size: 36px;
+    font-weight: 700;
 }
 
 .login-area .right-side label {
@@ -11467,18 +11463,15 @@ body.op-modal-open {
 }
 
 .register-area .right-side .title {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
     padding-bottom: 5px;
     color: var(--color-pink-dark);
-    font-weight: 600;
     text-transform: uppercase;
     text-align: center;
     font-family: "Segoe UI";
     margin-bottom: 85px;
+    margin-top: 50px;
+    font-size: 36px;
+    font-weight: 700;
 }
 
 .register-area .right-side label {
@@ -11490,12 +11483,8 @@ body.op-modal-open {
     margin-bottom: 10px;
 }
 
-.register-area .right-side a.forgot-password {
-    float: right;
-}
-
 .register-area .right-side .form-group {
-    margin-bottom: 47px;
+    margin-bottom: 30px;
 }
 
 .register-area .right-side input[type="text"],
@@ -11539,7 +11528,7 @@ body.op-modal-open {
     color: var(--color-white);
     border: none;
     padding: 14px 0;
-    margin-top: 27px;
+    margin-top: 30px;
     text-align: center;
     -webkit-transition: var(--transition);
     transition: var(--transition);
@@ -11549,7 +11538,18 @@ body.op-modal-open {
     opacity: .7;
 }
 
-input[type="checkbox"] {
+.register-area .right-side .col {
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+    .register-area .right-side .col {
+        flex: 1 1 100%!important;
+    }
+}
+
+
+/* input[type="checkbox"] {
     appearance: none;
     background-color: var(--color-white);
     margin: 0;
@@ -11560,19 +11560,12 @@ input[type="checkbox"] {
     border: 0.15em solid currentColor;
     border-radius: 5px;
     transform: translateY(-0.075em);
-}
-
-.form-control {
-    margin-top: 1em;
-}
-
-input[type="checkbox"] {
     display: grid;
     place-content: center;
     padding: 5px;
-}
+} */
 
-input[type="checkbox"]::before {
+/* input[type="checkbox"]::before {
     content: "";
     width: 0.65em;
     height: 0.65em;
@@ -11586,4 +11579,180 @@ input[type="checkbox"]:checked::before {
 
 input[type="checkbox"]::before {
     background-color: CanvasText;
+} */
+
+
+
+input[type="checkbox"]:checked+label::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: var(--color-black);
+    top: 0.7ex;
+    left: 0.6ex;
+    border: 3px solid var(--color-pink-dark);
+    background-color: var(--color-pink-dark);
+    border-radius: 5px;
+    border: none;
+}
+
+input[type="checkbox"] {
+    line-height: 2.1ex;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    position: absolute;
+    left: -999em;
+}
+
+input[type="checkbox"]+label {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+input[type="checkbox"]+label::before {
+    content: "";
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-pink-swan);
+    border-radius: 5px;
+    margin-right: 0.5em;
+}
+
+/*-------------------------
+   Forgot password
+-------------------------*/
+
+.forgot-password-area .right-side,
+.forgot-password-area .image {
+    min-height: 100vh;
+}
+
+.forgot-password-area .bg-image {
+    background: rgba(0, 0, 0, 0.8);
+    background-size: cover;
+    background-position: center center;
+}
+
+.forgot-password-area .left-side {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.forgot-password-area .left-side img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 68px;
+    top: 60px;
+}
+
+.forgot-password-area .left-side .title {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--color-white);
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+.forgot-password-area .right-side {
+    padding: 0 90px;
+}
+
+.forgot-password-area .right-side .top-right {
+    position: absolute;
+    top: 40px;
+    right: 90px;
+}
+
+.forgot-password-area .right-side .top-right a:hover {
+    text-decoration: underline;
+}
+
+.forgot-password-area .right-side .title {
+    padding-bottom: 5px;
+    color: var(--color-black);
+    text-align: center;
+    font-family: "Segoe UI";
+    margin-bottom: 38px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.forgot-password-area .right-side .heading-left p {
+    font-family: "Segoe UI";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: var(--color-black);
+    margin-bottom: 85px;
+}
+
+.forgot-password-area .right-side label {
+    color: var(--color-gray-shade);
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.forgot-password-area .right-side .form-group {
+    margin-bottom: 47px;
+}
+
+.forgot-password-area .right-side input,
+.forgot-password-area .right-side .form-control {
+    border-radius: 5px;
+    background-color: var(--color-gray-95);
+    color: var(--color-gray-dark);
+    padding: 15px 20px;
+    width: 100%;
+}
+
+.forgot-password-area .right-side input:hover,
+.forgot-password-area .right-side .form-control:hover {
+    outline: none;
+    background: var(--color-white);
+    border: 0.5px solid var(--color-gray-85);
+    box-shadow: 4px 4px 4px rgba(209, 20, 84, 0.15);
+    border-radius: 5px;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+}
+
+.forgot-password-area .right-side input:focus,
+.forgot-password-area .right-side .form-control:focus {
+    outline: none;
+    background: var(--color-white);
+    border: 0.5px solid var(--color-pink-dark);
+    box-shadow: 4px 4px 10px rgba(209, 20, 84, 0.15);
+    border-radius: 5px;
+}
+
+.forgot-password-area .right-side button.btn-reset_password {
+    width: 300px;
+    border-radius: 5px;
+    background-color: var(--color-pink-dark);
+    color: var(--color-white);
+    border: none;
+    padding: 14px 0;
+    margin-top: 27px;
+    text-align: center;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+}
+
+.forgot-password-area .right-side button.btn-reset_password:hover {
+    opacity: .7;
 }
