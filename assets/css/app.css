@@ -7325,7 +7325,7 @@ body.op-modal-open {
 
 .axil-mainmenu {
     /* padding: 50px 0; */
-    padding: 50px 120px;
+    padding: 22px 120px;
     -webkit-transition: var(--transition);
     transition: var(--transition);
 }
@@ -10808,6 +10808,16 @@ body.op-modal-open {
     #tranding {
         padding: 7rem 0;
     }
+
+    .tranding-slide {
+        width: 24rem !important;
+        height: 32rem !important;
+    }
+
+    .tranding-slide .tranding-slide-img img {
+        width: 24rem !important;
+        height: 32rem !important;
+    }
 }
 
 #tranding .tranding-slider {
@@ -11806,4 +11816,49 @@ input[type="checkbox"]+label::before {
 
 .user-info-area .sidebar-menu ul.profile-links li a {
     color: var(--color-gray-shade);
+}
+
+.user-info-area .profile-content .top-section {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-bottom: 50px;
+}
+
+.user-info-area .profile-content .top-section .profile-img {
+    width: 150px;
+    height: 150px;
+    background-color: var(--color-gray-85);
+    padding: 30px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+}
+
+.user-info-area .profile-content .top-section .profile-img img {
+    width: 50%;
+    position: relative;
+    top: 25%;
+    left: 25%;
+}
+
+.user-info-area .profile-content .top-section .profile-img i.fa-pen {
+    padding: 10px;
+    background-color: var(--color-pink-dark);
+    color: var(--color-white);
+    border-radius: 100%;
+    position: relative;
+    bottom: -65px;
+    right: -35px;
+}
+
+.user-info-area .profile-content .top-section .profile-title h4 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-black);
+}
+
+.user-info-area .profile-content .top-section .profile-title p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-black);
 }
