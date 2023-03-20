@@ -11781,7 +11781,11 @@ input[type="checkbox"]+label::before {
 
 .user-info-area {
     background-color: var(--color-white);
-    padding: 100px 120px;
+    padding: 44px 120px;
+}
+
+.border_bottom {
+    border-bottom: 1px solid var(--color-gray-85);
 }
 
 .user-info-area .section-heading .title {
@@ -11803,6 +11807,12 @@ input[type="checkbox"]+label::before {
     margin-bottom: 16px;
 }
 
+.user-info-area .sidebar-menu ul.profile-links li.active i, 
+.user-info-area .sidebar-menu ul.profile-links li.active a {
+    color: var(--color-black);
+    font-weight: 600;
+}
+
 .user-info-area .sidebar-menu ul.profile-links li:hover,
 .user-info-area .sidebar-menu ul.profile-links li:hover a {
     color: var(--color-black);
@@ -11821,7 +11831,7 @@ input[type="checkbox"]+label::before {
 .user-info-area .profile-content .top-section {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    margin-bottom: 50px;
+    margin: 50px 0;
 }
 
 .user-info-area .profile-content .top-section .profile-img {
@@ -11850,6 +11860,11 @@ input[type="checkbox"]+label::before {
     right: -35px;
 }
 
+.user-info-area .profile-content .top-section .profile-title {
+    margin: auto;
+    margin-left: -100px;
+}
+
 .user-info-area .profile-content .top-section .profile-title h4 {
     margin-bottom: 15px;
     font-size: 24px;
@@ -11861,4 +11876,21 @@ input[type="checkbox"]+label::before {
     font-size: 16px;
     font-weight: 400;
     color: var(--color-black);
+    margin-bottom: 0;
+}
+
+.user-info-area .profile-content form label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(olor-gray-shade);
+    margin-bottom: 10px;
+}
+
+.user-info-area .profile-content form input {
+    /* width: 285px; */
+    height: 50px;
+    background-color: var(--color-gray-95);
+    border-radius: 5px;
 }

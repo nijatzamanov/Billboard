@@ -40,7 +40,7 @@
     <!--=====================================-->
     <header class="header axil-header header-style-4">
       <div id="axil-sticky-placeholder"></div>
-      <div class="axil-mainmenu">
+      <div class="axil-mainmenu border_bottom">
         <div class="container-fluid">
           <div class="header-navbar">
             <div class="header-logo">
@@ -96,7 +96,7 @@
             </div>
             <div class="sidebar-menu">
               <ul class="profile-links">
-                <li>
+                <li class="active">
                   <i class="fa-sharp fa-regular fa-user"></i>
                   <a href="profile.html">User info</a>
                 </li>
@@ -120,11 +120,12 @@
             <div class="profile-content">
               <div class="top-section">
                 <div class="profile-img">
+                  <!-- <img src="assets/media/logo.png" alt=""> -->
                   <img src="assets/media/logo.png" alt="">
                   <i class="fa-sharp fa-solid fa-pen">
                     <!-- <input type="file" name="" id=""> -->
                   </i>
-                </div>                
+                </div>
                 <div class="profile-title">
                   <h4>Safiya Zamanlı</h4>
                   <p>safiyasamanli@gmail.com</p>
@@ -132,34 +133,37 @@
               </div>
               <form action="" method="">
                 <div class="row">
-                  <div class="col">
-                    <label for="signupFirstName">First name</label>
-                    <input type="text" id="signupFirstName" class="form-control" required="" aria-label="">
+
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label for="profileFirstName">First name</label>
+                      <input type="text" id="profileFirstName" class="form-control" required="" aria-label="">
+                    </div>
+                    <div class="form-group">
+                      <label for="profileEmail">Email address</label>
+                      <input type="text" id="profileEmail" class="form-control" required="" aria-label="">
+                    </div>
+                    <div class="form-group">
+                      <label for="profileLocation">Location</label>
+                      <input type="text" id="profileLocation" class="form-control" required="" aria-label="">
+                    </div>
                   </div>
-                  <div class="col">
-                    <label for="signupLastName">Last name</label>
-                    <input type="text" id="signupLastName" class="form-control" required="" aria-label="">
+
+                  <div class="col-lg-4">
+                    <div class="form-group">
+                      <label for="profileLastName">Last name</label>
+                      <input type="text" id="profileLastName" class="form-control" required="" aria-label="">
+                    </div>
+                    <div class="form-group">
+                      <label for="profilePhone">Phone number</label>
+                      <input type="text" id="profilePhone" class="form-control" required="" aria-label="">
+                    </div>
+                    <div class="form-group">
+                      <label for="profilePostal">Postal code</label>
+                      <input type="text" id="profilePostal" class="form-control" required="" aria-label="">
+                    </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <label for="signupFirstName">Email address</label>
-                    <input type="text" id="signupFirstName" class="form-control" required="" aria-label="">
-                  </div>
-                  <div class="col">
-                    <label for="signupLastName">Phone number</label>
-                    <input type="text" id="signupLastName" class="form-control" required="" aria-label="">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    <label for="signupFirstName">Location</label>
-                    <input type="text" id="signupFirstName" class="form-control" required="" aria-label="">
-                  </div>
-                  <div class="col">
-                    <label for="signupLastName">Postal code</label>
-                    <input type="text" id="signupLastName" class="form-control" required="" aria-label="">
-                  </div>
+
                 </div>
               </form>
             </div>
