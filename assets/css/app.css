@@ -11789,6 +11789,7 @@ input[type="checkbox"]+label::before {
 }
 
 .user-info-area .section-heading .title {
+    width: 100%;
     font-size: 32px;
     color: var(--color-black);
     font-weight: 700;
@@ -11975,4 +11976,35 @@ input[type="checkbox"]+label::before {
 
 .user-info-area .profile-content .save-changes a:hover {
     opacity: .8;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    
+}
+
+@media only screen and (max-width: 1500px) {
+    .user-info-area .profile-content .top-section .profile-title {
+        margin-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .user-info-area .sidebar-menu::after {
+        display: none;
+    }
+
+    .user-info-area .profile-content .top-section {
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    .user-info-area .profile-content .top-section .profile-title {
+        text-align: center;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .user-info-area .section-heading .title {
+        text-align: center;
+    }
 }
