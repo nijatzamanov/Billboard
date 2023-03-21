@@ -11911,6 +11911,36 @@ input[type="checkbox"]+label::before {
     border-radius: 5px;
 }
 
-/* .user-info-area .profile-content .save-changes a {
+.user-info-area .profile-content input:hover,
+.user-info-area .profile-content .form-control:hover {
+    outline: none;
+    background: var(--color-white);
+    border: 0.5px solid var(--color-gray-85);
+    box-shadow: 4px 4px 4px rgba(209, 20, 84, 0.15);
+    border-radius: 5px;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+}
 
-} */
+.user-info-area .profile-content input:focus,
+.user-info-area .profile-content .form-control:focus {
+    outline: none;
+    background: var(--color-white);
+    border: 0.5px solid var(--color-pink-dark);
+    box-shadow: 4px 4px 10px rgba(209, 20, 84, 0.15);
+    border-radius: 5px;
+}
+
+.user-info-area .profile-content .save-changes a {
+    width: 100%;
+    padding: 14px 0;
+    color: var(--color-white);
+    background-color: var(--color-pink-dark);
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.user-info-area .profile-content .save-changes a:hover {
+    opacity: .8;
+}
