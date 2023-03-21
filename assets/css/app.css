@@ -11796,8 +11796,24 @@ input[type="checkbox"]+label::before {
     margin-bottom: 60px;
 }
 
+.user-info-area .sidebar-menu {
+    position: relative;
+}
+
 .user-info-area .sidebar-menu ul.profile-links {
     padding-left: 0;
+}
+
+.user-info-area .sidebar-menu::after {
+    display: inline-block;
+    content: "";
+    width: 8px;
+    height: 50px;
+    background-color: var(--color-pink-dark);
+    border-radius: 8px;
+    position: absolute;
+    top: -20px;
+    right: 70px;
 }
 
 .user-info-area .sidebar-menu ul.profile-links li {
@@ -11894,3 +11910,7 @@ input[type="checkbox"]+label::before {
     background-color: var(--color-gray-95);
     border-radius: 5px;
 }
+
+/* .user-info-area .profile-content .save-changes a {
+
+} */
