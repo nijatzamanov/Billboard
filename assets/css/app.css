@@ -11848,9 +11848,10 @@ input[type="checkbox"]+label::before {
     display: grid;
     grid-template-columns: auto auto auto auto;
     margin: 50px 0;
+    position: relative;
 }
 
-.user-info-area .profile-content .top-section .profile-img {
+.user-info-area .profile-content .top-section .profile-img-with-icon {
     width: 150px;
     height: 150px;
     background-color: var(--color-gray-85);
@@ -11859,14 +11860,14 @@ input[type="checkbox"]+label::before {
     border-radius: 100%;
 }
 
-.user-info-area .profile-content .top-section .profile-img img {
+.user-info-area .profile-content .top-section .profile-img-with-icon img {
     width: 50%;
     position: relative;
     top: 25%;
     left: 25%;
 }
 
-.user-info-area .profile-content .top-section .profile-img i.fa-pen {
+.user-info-area .profile-content .top-section .profile-img-with-icon i.fa-pen {
     padding: 10px;
     background-color: var(--color-pink-dark);
     color: var(--color-white);
@@ -11874,6 +11875,29 @@ input[type="checkbox"]+label::before {
     position: relative;
     bottom: -65px;
     right: -35px;
+}
+
+.user-info-area .profile-content .top-section .profile-img-with-image {
+    width: 150px;
+    height: 150px;
+    background-color: var(--color-gray-85);
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+}
+
+.user-info-area .profile-content .top-section .profile-img-with-image img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.user-info-area .profile-content .top-section .profile-img-with-image i.fa-pen {
+    padding: 10px;
+    background-color: var(--color-pink-dark);
+    color: var(--color-white);
+    border-radius: 100%;
+    position: relative;
+    bottom: 50px;
+    right: -120px;
 }
 
 .user-info-area .profile-content .top-section .profile-title {
