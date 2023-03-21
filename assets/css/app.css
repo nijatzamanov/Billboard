@@ -11877,6 +11877,10 @@ input[type="checkbox"]+label::before {
     right: -35px;
 }
 
+.user-info-area .profile-content .top-section .profile-img-with-icon label {
+    cursor: pointer;
+}
+
 .user-info-area .profile-content .top-section .profile-img-with-image {
     width: 150px;
     height: 150px;
@@ -11898,6 +11902,10 @@ input[type="checkbox"]+label::before {
     position: relative;
     bottom: 50px;
     right: -120px;
+}
+
+.user-info-area .profile-content .top-section .profile-img-with-image label {
+    cursor: pointer;
 }
 
 .user-info-area .profile-content .top-section .profile-title {
