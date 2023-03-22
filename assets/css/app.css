@@ -11779,6 +11779,8 @@ input[type="checkbox"]+label::before {
    Profile
 --------------*/
 
+/* User Info */
+
 .user-info-area {
     background-color: var(--color-white);
     padding: 44px 120px;
@@ -11978,10 +11980,6 @@ input[type="checkbox"]+label::before {
     opacity: .8;
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-    
-}
-
 @media only screen and (max-width: 1500px) {
     .user-info-area .profile-content .top-section .profile-title {
         margin-left: 50px;
@@ -12006,5 +12004,236 @@ input[type="checkbox"]+label::before {
 
     .user-info-area .section-heading .title {
         text-align: center;
+    }
+}
+
+/* Settings */
+
+.settings-area {
+    background-color: var(--color-white);
+    padding: 44px 120px;
+}
+
+.settings-area .section-heading .title {
+    width: 100%;
+    font-size: 32px;
+    color: var(--color-black);
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 60px;
+}
+
+.settings-area .sidebar-menu {
+    position: relative;
+}
+
+.settings-area .sidebar-menu ul.profile-links {
+    padding-left: 0;
+}
+
+.settings-area .sidebar-menu::after {
+    display: inline-block;
+    content: "";
+    width: 8px;
+    height: 50px;
+    background-color: var(--color-pink-dark);
+    border-radius: 8px;
+    position: absolute;
+    top: -20px;
+    right: 70px;
+}
+
+.settings-area .sidebar-menu ul.profile-links li {
+    color: var(--color-gray-shade);
+    list-style-type: none;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.settings-area .sidebar-menu ul.profile-links li.active i, 
+.settings-area .sidebar-menu ul.profile-links li.active a {
+    color: var(--color-black);
+    font-weight: 600;
+}
+
+.settings-area .sidebar-menu ul.profile-links li:hover,
+.settings-area .sidebar-menu ul.profile-links li:hover a {
+    color: var(--color-black);
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+}
+
+.settings-area .sidebar-menu ul.profile-links li i {
+    margin-right: 15px;
+}
+
+.settings-area .sidebar-menu ul.profile-links li a {
+    color: var(--color-gray-shade);
+}
+
+.settings-area .profile-content .top-section {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 50px 0;
+    position: relative;
+}
+
+.settings-area .profile-content .top-section .profile-img-with-icon {
+    width: 150px;
+    height: 150px;
+    background-color: var(--color-gray-85);
+    padding: 30px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+}
+
+.settings-area .profile-content .top-section .profile-img-with-icon img {
+    width: 50%;
+    position: relative;
+    top: 25%;
+    left: 25%;
+}
+
+.settings-area .profile-content .top-section .profile-img-with-icon i.fa-pen {
+    padding: 10px;
+    background-color: var(--color-pink-dark);
+    color: var(--color-white);
+    border-radius: 100%;
+    position: relative;
+    bottom: -65px;
+    right: -35px;
+}
+
+.settings-area .profile-content .top-section .profile-img-with-icon label {
+    cursor: pointer;
+}
+
+.settings-area .profile-content .top-section .profile-img-with-image {
+    width: 150px;
+    height: 150px;
+    background-color: var(--color-gray-85);
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+}
+
+.settings-area .profile-content .top-section .profile-img-with-image img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.settings-area .profile-content .top-section .profile-img-with-image i.fa-pen {
+    padding: 10px;
+    background-color: var(--color-pink-dark);
+    color: var(--color-white);
+    border-radius: 100%;
+    position: relative;
+    bottom: 50px;
+    right: -120px;
+}
+
+.settings-area .profile-content .top-section .profile-img-with-image label {
+    cursor: pointer;
+}
+
+.settings-area .profile-content .top-section .profile-title {
+    margin: auto;
+    margin-left: -100px;
+}
+
+.settings-area .profile-content .top-section .profile-title h4 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-black);
+}
+
+.settings-area .profile-content .top-section .profile-title p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-black);
+    margin-bottom: 0;
+}
+
+.settings-area .profile-content form label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(olor-gray-shade);
+    margin-bottom: 10px;
+}
+
+.settings-area .profile-content form input {
+    height: 50px;
+    background-color: var(--color-gray-95);
+    border-radius: 5px;
+}
+
+.settings-area .profile-content input:hover,
+.settings-area .profile-content .form-control:hover {
+    outline: none;
+    background: var(--color-white);
+    border: 0.5px solid var(--color-gray-85);
+    box-shadow: 4px 4px 4px rgba(209, 20, 84, 0.15);
+    border-radius: 5px;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+}
+
+.settings-area .profile-content input:focus,
+.settings-area .profile-content .form-control:focus {
+    outline: none;
+    background: var(--color-white);
+    border: 0.5px solid var(--color-pink-dark);
+    box-shadow: 4px 4px 10px rgba(209, 20, 84, 0.15);
+    border-radius: 5px;
+}
+
+.settings-area .profile-content .update button {
+    width: 50%;
+    padding: 14px 0;
+    color: var(--color-white);
+    background-color: var(--color-pink-dark);
+    border-radius: 5px;
+    text-align: center;
+    float: right;
+    margin-top: 35px;
+    border: none;
+}
+
+.settings-area .profile-content .update button:hover {
+    opacity: .8;
+}
+
+@media only screen and (max-width: 1500px) {
+    .settings-area .profile-content .top-section .profile-title {
+        margin-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .settings-area .sidebar-menu::after {
+        display: none;
+    }
+
+    .settings-area .profile-content .top-section {
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    .settings-area .profile-content .top-section .profile-title {
+        text-align: center;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .settings-area .section-heading .title {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .settings-area .profile-content .update button {
+        width: 100%;
     }
 }
