@@ -12247,3 +12247,177 @@ input[type="checkbox"]+label::before {
         width: 100%;
     }
 }
+
+/* Orders */
+
+.orders-area {
+    background-color: var(--color-white);
+    padding: 44px 120px;
+}
+
+.orders-area .section-heading .title {
+    width: 100%;
+    font-size: 32px;
+    color: var(--color-black);
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 60px;
+}
+
+.orders-area .sidebar-menu {
+    position: relative;
+}
+
+.orders-area .sidebar-menu ul.profile-links {
+    padding-left: 0;
+}
+
+.orders-area .sidebar-menu::after {
+    display: inline-block;
+    content: "";
+    width: 8px;
+    height: 50px;
+    background-color: var(--color-pink-dark);
+    border-radius: 8px;
+    position: absolute;
+    top: -20px;
+    right: 70px;
+}
+
+.orders-area .sidebar-menu ul.profile-links li {
+    color: var(--color-gray-shade);
+    list-style-type: none;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.orders-area .sidebar-menu ul.profile-links li.active i, 
+.orders-area .sidebar-menu ul.profile-links li.active a {
+    color: var(--color-black);
+    font-weight: 600;
+}
+
+.orders-area .sidebar-menu ul.profile-links li:hover,
+.orders-area .sidebar-menu ul.profile-links li:hover a {
+    color: var(--color-black);
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+}
+
+.orders-area .sidebar-menu ul.profile-links li i {
+    margin-right: 15px;
+}
+
+.orders-area .sidebar-menu ul.profile-links li a {
+    color: var(--color-gray-shade);
+}
+
+.orders-area .profile-content .top-section {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 50px 0;
+    position: relative;
+}
+
+.orders-area .profile-content .top-section .profile-img-with-icon {
+    width: 150px;
+    height: 150px;
+    background-color: var(--color-gray-85);
+    padding: 30px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+}
+
+.orders-area .profile-content .top-section .profile-img-with-icon img {
+    width: 50%;
+    position: relative;
+    top: 25%;
+    left: 25%;
+}
+
+.orders-area .profile-content .top-section .profile-img-with-icon i.fa-pen {
+    padding: 10px;
+    background-color: var(--color-pink-dark);
+    color: var(--color-white);
+    border-radius: 100%;
+    position: relative;
+    bottom: -65px;
+    right: -35px;
+}
+
+.orders-area .profile-content .top-section .profile-img-with-icon label {
+    cursor: pointer;
+}
+
+.orders-area .profile-content .top-section .profile-img-with-image {
+    width: 150px;
+    height: 150px;
+    background-color: var(--color-gray-85);
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+}
+
+.orders-area .profile-content .top-section .profile-img-with-image img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.orders-area .profile-content .top-section .profile-img-with-image i.fa-pen {
+    padding: 10px;
+    background-color: var(--color-pink-dark);
+    color: var(--color-white);
+    border-radius: 100%;
+    position: relative;
+    bottom: 50px;
+    right: -120px;
+}
+
+.orders-area .profile-content .top-section .profile-img-with-image label {
+    cursor: pointer;
+}
+
+.orders-area .profile-content .top-section .profile-title {
+    margin: auto;
+    margin-left: -100px;
+}
+
+.orders-area .profile-content .top-section .profile-title h4 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-black);
+}
+
+.orders-area .profile-content .top-section .profile-title p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-black);
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1500px) {
+    .settings-area .profile-content .top-section .profile-title {
+        margin-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .settings-area .sidebar-menu::after {
+        display: none;
+    }
+
+    .settings-area .profile-content .top-section {
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    .settings-area .profile-content .top-section .profile-title {
+        text-align: center;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .settings-area .section-heading .title {
+        text-align: center;
+    }
+}
