@@ -11966,7 +11966,7 @@ input[type="checkbox"]+label::before {
     border-radius: 5px;
 }
 
-.user-info-area .profile-content .save-changes a {
+.user-info-area .profile-content .save-changes button {
     width: 100%;
     padding: 14px 0;
     color: var(--color-white);
@@ -11974,9 +11974,10 @@ input[type="checkbox"]+label::before {
     border-radius: 5px;
     text-align: center;
     margin-top: 35px;
+    border: none;
 }
 
-.user-info-area .profile-content .save-changes a:hover {
+.user-info-area .profile-content .save-changes button:hover {
     opacity: .8;
 }
 
