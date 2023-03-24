@@ -5879,8 +5879,8 @@ Pagination
 /*-------------------------
     Privacy Policy
 -------------------------*/
-.privacy-policy-area .section-title {
-    margin-bottom: 60px;
+.privacy-policy-area {
+    padding: 40px 0 20px;
 }
 
 .privacy-policy-area .section-title .title {
