@@ -758,8 +758,9 @@ input {
 -------------------------*/
 .breadcrum-area {
     background: var(--gradient-primary);
-    padding: 200px 0 100px;
-    margin-top: -160px;
+    /* padding: 200px 0 100px; */
+    padding: 50px 0 40px;
+    /* margin-top: -160px; */
     position: relative;
     z-index: 1;
 }
@@ -5831,6 +5832,48 @@ Pagination
     bottom: auto;
     top: 25px;
 }
+
+/*-------------------------
+    Terms & Conditions
+-------------------------*/
+.terms-area {
+    padding: 40px 0 20px;
+}
+
+.terms-area .section-title {
+    margin-bottom: 60px;
+}
+
+.terms-area .section-title .title {
+    border-bottom: 3px solid var(--color-primary);
+    padding-bottom: 15px;
+}
+
+.terms-area h4 {
+    margin-bottom: 20px;
+}
+
+.terms-area p {
+    line-height: 1.7;
+}
+
+.terms-area ul {
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+
+.terms-area ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 28px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.terms-area ul li:hover {
+    color: var(--color-primary);
+}
+
 
 /*-------------------------
     Privacy Policy
