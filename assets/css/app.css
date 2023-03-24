@@ -12427,19 +12427,30 @@ input[type="checkbox"]+label::before {
     border-radius: 5px;
 }
 
+.orders-area .bdr {
+    border-radius: 6px;
+}
+
+.orders-area .table>:not(caption)>*>* {
+    box-shadow: none;
+}
+
 .orders-area table thead {
     background-color: var(--color-gray-95);
+    border: 1px solid var(--color-gray-95);
 }
 
 .orders-area table thead th {
-    padding: 15px;
+    padding: 15px 24px;
+    font-size: 16px;
+    font-weight: 400;
 }
 
-.orders-area table tr:first-child th:first-child {
+.orders-area table > thead > tr:first-child th:first-child {
     border-top-left-radius: 5px;
 }
 
-.orders-area table tr:first-child th:last-child {
+.orders-area table > thead > tr:first-child th:last-child {
     border-top-right-radius: 5px;
 }
 
@@ -12451,8 +12462,53 @@ input[type="checkbox"]+label::before {
     border-bottom-right-radius: 5px;
 }
 
+.orders-area table > tbody > tr:last-child {
+    border-bottom-left-radius: 5px;
+}
+
 .orders-area table > tbody > tr {
     border: 1px solid var(--color-gray-87);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+}
+
+.orders-area table > tbody > tr:hover {
+    --bs-table-hover-bg: var(--color-white);
+    border-color: var(--color-pink-dark);
+}
+
+.orders-area table > tbody > tr:hover td.delete {
+    border-top-color: var(--color-pink-dark);
+    /* border-right: 1px solid var(--color-gray-87); */
+    background: rgba(209, 20, 84, 0.06);
+}
+
+.orders-area table > tbody > tr > td {
+    color: var(--color-gray-shade);
+    padding: 28px 24px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.orders-area table > tbody > tr > td.delete {
+    border-left: 1px solid var(--color-gray-87);
+    text-align: center;
+}
+
+.orders-area table > tbody > tr > td a i {
+    color: var(--color-gray-shade);
+}
+
+.orders-area table > tbody > tr > td.delete:hover a i {
+    color: var(--color-pink-dark);
+}
+
+.orders-area .accepted {
+    color: #038A21;
+}
+
+.orders-area .pending {
+    color: #FF6B00;
+}
+
+.orders-area .cancelled {
+    color: #FF0000;
 }
