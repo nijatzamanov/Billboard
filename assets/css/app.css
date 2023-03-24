@@ -12503,12 +12503,15 @@ input[type="checkbox"]+label::before {
 
 .orders-area .accepted {
     color: #038A21;
+    text-transform: uppercase;
 }
 
 .orders-area .pending {
     color: #FF6B00;
+    text-transform: uppercase;
 }
 
 .orders-area .cancelled {
     color: #FF0000;
+    text-transform: uppercase;
 }
