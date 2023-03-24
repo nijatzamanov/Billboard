@@ -766,15 +766,15 @@ input {
 }
 
 @media only screen and (max-width: 1199px) {
-    .breadcrum-area {
+    /* .breadcrum-area {
         margin-top: -120px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 767px) {
-    .breadcrum-area {
+    /* .breadcrum-area {
         padding: 150px 0 40px;
-    }
+    } */
 }
 
 .breadcrumb {
@@ -793,7 +793,7 @@ input {
 
 .breadcrumb li {
     display: inline-block;
-    color: var(--color-primary);
+    color: var(--color-dark);
     font-weight: 500;
     position: relative;
     margin-right: 22px;
@@ -808,12 +808,13 @@ input {
     right: -15px;
 }
 
-.breadcrumb li a {
+/* .breadcrumb li a {
     color: var(--color-gray-2);
-}
+} */
 
 .breadcrumb li a:hover {
     color: var(--color-primary);
+    /* text-decoration: underline; */
 }
 
 .breadcrumb li:last-child:after {
