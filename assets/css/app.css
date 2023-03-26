@@ -12529,7 +12529,7 @@ input[type="checkbox"]+label::before {
     color: var(--color-gray-shade);
     padding: 28px 24px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .orders-area table > tbody > tr > td.delete {
@@ -12558,4 +12558,25 @@ input[type="checkbox"]+label::before {
 .orders-area .cancelled {
     color: #FF0000;
     text-transform: uppercase;
+}
+
+/* Projects */
+
+/* .search-input {
+    position: relative;
+} */
+
+.search-input input {
+    width: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 0;
+}
+
+.icon {
+    background: url('assets/media/icon/search.svg') no-repeat left;
+    padding-left: 30px;
+    background-size: 20px;
 }
