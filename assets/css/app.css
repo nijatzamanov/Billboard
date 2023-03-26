@@ -12566,7 +12566,7 @@ input[type="checkbox"]+label::before {
     position: relative;
 } */
 
-.search-input input {
+/* .search-input input {
     width: 50%;
     display: block;
     margin-right: auto;
@@ -12575,8 +12575,49 @@ input[type="checkbox"]+label::before {
     border-radius: 0;
 }
 
-.icon {
+.search-input i {
+    position: absolute;
+} */
+
+/* .icon {
     background: url('assets/media/icon/search.svg') no-repeat left;
     padding-left: 30px;
     background-size: 20px;
+} */
+
+input[type="search"] {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    width: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+input[type="search"]::placeholder {
+    color: #bbb;
+}
+
+input[type="search"]:focus {
+    box-shadow: 0 0 3px 0 #1183d6;
+    border-color: #1183d6;
+    outline: none;
+}
+
+form.nosubmit {
+    border: none;
+    padding: 0;
+}
+
+input.nosubmit {
+    border: 1px solid #555;
+    width: 100%;
+    padding: 9px 4px 9px 40px;
+    background: transparent url("../../assets/media/icon/search.svg") no-repeat 13px center;
 }
