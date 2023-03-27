@@ -11114,7 +11114,7 @@ body.op-modal-open {
     height: 50px;
 } */
 
-.header .header-action a.profile-img-with-icon {
+.header .header-action .header-btn a.profile-img-with-icon {
     width: 50px;
     height: 50px;
     padding: 11px;
@@ -11128,18 +11128,18 @@ body.op-modal-open {
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
 }
 
-.header .header-action a.profile-img-with-icon:hover {
+.header .header-action .header-btn a.profile-img-with-icon:hover {
     border: 1px solid var(--color-white);
     background-color: var(--color-white);
     color: var(--color-black);
 }
 
-.header .header-action a.profile-img-with-icon img {
+.header .header-action .header-btn a.profile-img-with-icon img {
     filter: blur(1px);
     width: 100%;
 }
 
-.header .header-action a.profile-img-with-image {
+.header .header-action .header-btn a.profile-img-with-image {
     width: 50px;
     height: 50px;
     font-size: 16px;
@@ -11151,7 +11151,7 @@ body.op-modal-open {
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
 }
 
-.header .header-action a.profile-img-with-image img {
+.header .header-action .header-btn a.profile-img-with-image img {
     width: 100%;
     border-radius: 50%;
 }
