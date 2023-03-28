@@ -10838,6 +10838,53 @@ body.op-modal-open {
     display: none;
 } */
 
+#top_spots_popup .modal-content {
+    background: rgba(217, 217, 217, 0.7);
+    border-radius: 5px;
+    padding: 50px;
+}
+
+#top_spots_popup .modal-content .close-popup {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+}
+
+#top_spots_popup .modal-content .close-popup button.close {
+    color: var(--color-pink-dark) !important;
+    opacity: 1;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+}
+
+#top_spots_popup .modal-content .close-popup button.close i {
+    font-size: 36px;
+}
+
+#top_spots_popup .modal-content .close-popup button.close:hover i {
+    color: #920c4a;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+}
+
+#top_spots_popup .modal-body {
+    padding: 18px 24px;
+    background: #D9D9D9;
+    border-radius: 5px;
+}
+
+#top_spots_popup .modal-body .image-sec {
+    /* width: 500px; */
+    height: 300px;
+}
+
+#top_spots_popup .modal-body .image-sec img {
+    width: 100%;
+    height: 100%;
+}
+
+
 /* Home page banner */
 .banner_section {
     background-image: url('/assets/media/banner/banner_ny.png');
@@ -12634,4 +12681,5 @@ input[type="checkbox"]+label::before {
     box-shadow: 4px 4px 10px rgba(209, 20, 84, 0.15);
     border-radius: 5px;
 }
+
 
