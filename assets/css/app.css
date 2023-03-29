@@ -10852,7 +10852,7 @@ body.op-modal-open {
 
 #top_spots_popup .modal-content .close-popup {
     position: absolute;
-    top: 13px;
+    top: 8px;
     right: 13px;
 }
 
@@ -10865,7 +10865,7 @@ body.op-modal-open {
 }
 
 #top_spots_popup .modal-content .close-popup button.close i {
-    font-size: 36px;
+    font-size: 30px;
 }
 
 #top_spots_popup .modal-content .close-popup button.close:hover i {
@@ -10915,6 +10915,21 @@ body.op-modal-open {
     color: var(--color-pink-dark);
     font-size: 14px;
     font-weight: 600;
+}
+
+#top_spots_popup .modal-body .see-more-btn {
+    text-align: right;
+    margin-top: 10px;
+}
+
+#top_spots_popup .modal-body .see-more-btn a {
+    color: var(--color-pink-dark);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#top_spots_popup .modal-body .see-more-btn a:hover {
+    text-decoration: underline;
 }
 
 
