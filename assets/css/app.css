@@ -10911,6 +10911,12 @@ body.op-modal-open {
     font-weight: 600;
 }
 
+#top_spots_popup .modal-body .price {
+    color: var(--color-pink-dark);
+    font-size: 14px;
+    font-weight: 600;
+}
+
 
 /* Home page banner */
 .banner_section {
