@@ -10847,7 +10847,7 @@ body.op-modal-open {
 #top_spots_popup .modal-content {
     background: rgba(217, 217, 217, 0.7);
     border-radius: 5px;
-    padding: 50px;
+    padding: 37px 51px;
 }
 
 #top_spots_popup .modal-content .close-popup {
@@ -10876,7 +10876,7 @@ body.op-modal-open {
 
 #top_spots_popup .modal-body {
     padding: 18px 24px;
-    background: #D9D9D9;
+    background: var(--color-white);
     border-radius: 5px;
 }
 
