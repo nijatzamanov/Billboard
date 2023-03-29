@@ -10904,11 +10904,12 @@ body.op-modal-open {
     width: 25px;
 }
 
-#top_spots_popup .modal-body .title {
+#top_spots_popup .modal-body .title a {
     color: var(--color-black);
     margin: 6px 0;
     font-size: 16px;
     font-weight: 600;
+    text-transform: capitalize;
 }
 
 #top_spots_popup .modal-body .price {
