@@ -12795,3 +12795,45 @@ input[type="checkbox"]+label::before {
     margin-bottom: 60px;
 }
 
+.contact-area input {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gray-87);
+    border-radius: 5px;
+    color: var(--color-gray-shade);
+}
+
+.contact-area input:hover {
+    outline: none;
+    background: var(--color-white);
+    border: 0.5px solid var(--color-gray-85);
+    box-shadow: 4px 4px 4px rgba(209, 20, 84, 0.15);
+    border-radius: 5px;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+}
+
+.contact-area .form-control:focus {
+    outline: none;
+    background: var(--color-white);
+    border: 0.5px solid var(--color-pink-dark);
+    box-shadow: 4px 4px 10px rgba(209, 20, 84, 0.15);
+    border-radius: 5px;
+}
+
+.contact-area button.btn-send {
+    width: 300px;
+    border-radius: 5px;
+    background-color: var(--color-pink-dark);
+    color: var(--color-white);
+    border: none;
+    padding: 14px 0;
+    margin-top: 27px;
+    text-align: center;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+}
+
+.contact-area button.btn-send:hover {
+    opacity: .7;
+}
+
