@@ -12802,15 +12802,7 @@ input[type="checkbox"]+label::before {
     color: var(--color-gray-shade);
 }
 
-.contact-area input:hover {
-    outline: none;
-    background: var(--color-white);
-    border: 0.5px solid var(--color-gray-85);
-    box-shadow: 4px 4px 4px rgba(209, 20, 84, 0.15);
-    border-radius: 5px;
-    -webkit-transition: var(--transition);
-    transition: var(--transition);
-}
+
 
 .contact-area .form-control:focus {
     outline: none;
@@ -12831,9 +12823,5 @@ input[type="checkbox"]+label::before {
     text-align: center;
     -webkit-transition: var(--transition);
     transition: var(--transition);
-}
-
-.contact-area button.btn-send:hover {
-    opacity: .7;
 }
 
