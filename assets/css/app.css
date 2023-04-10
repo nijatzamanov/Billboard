@@ -12795,6 +12795,16 @@ input[type="checkbox"]+label::before {
     margin-bottom: 60px;
 }
 
+.contact-area input[type="number"]::-webkit-outer-spin-button,
+.contact-area input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.contact-area input[type="number"] {
+    -moz-appearance: textfield;
+}
+
 .contact-area input,
 .contact-area textarea {
     width: 100%;
