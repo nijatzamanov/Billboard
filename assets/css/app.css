@@ -8250,6 +8250,17 @@ body.op-modal-open {
     .mainmenu-nav .mainmenu .menu-item-has-children.menu-item-open .axil-submenu {
         display: block;
     }
+
+    .header .mainmenu a.sign-up {
+        border: none!important;
+        padding-left: 0!important;
+        border-radius: 0;
+    }
+
+    .header .mainmenu a.sign-up:hover {
+        background-color: transparent!important;
+        color: var(--color-white)!important;
+    }
 }
 
 @-webkit-keyframes headerSlideDown {
