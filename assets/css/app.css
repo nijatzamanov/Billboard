@@ -12027,6 +12027,12 @@ input[type="checkbox"]+label::before {
     opacity: .7;
 }
 
+@media only screen and (max-width: 1199px) {
+    .forgot-password-area .right-side button.btn-reset_password {
+        width: 100%;
+    }
+}
+
 /*------------
    Profile
 --------------*/
