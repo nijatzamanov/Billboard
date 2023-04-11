@@ -11809,6 +11809,12 @@ body.op-modal-open {
     margin-bottom: 30px;
 }
 
+@media only screen and (max-width: 1199px) {
+    .register-area .right-side button.btn-sign_up {
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .register-area .right-side .col {
         flex: 1 1 100%!important;
