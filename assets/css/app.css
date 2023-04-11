@@ -11676,6 +11676,12 @@ body.op-modal-open {
     opacity: .7;
 }
 
+@media only screen and (max-width: 1199px) {
+    .login-area .right-side button.btn-sign_in {
+        width: 100%;
+    }
+}
+
 /*-------------------------
    Sign up
 -------------------------*/
