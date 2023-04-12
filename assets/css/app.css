@@ -11721,6 +11721,11 @@ body.op-modal-open {
     width: 50%;
 }
 
+.register-area .logo {
+    position: absolute;
+    top: 40px;
+}
+
 .register-area .right-side {
     padding: 0 90px;
 }
