@@ -11969,6 +11969,18 @@ input[type="checkbox"]+label::before {
     width: 50%;
 }
 
+.forgot-password-area .logo {
+    display: none;
+    position: absolute;
+    top: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    .forgot-password-area .logo {
+        display: block;
+    }
+}
+
 .forgot-password-area .right-side {
     padding: 0 90px;
 }
