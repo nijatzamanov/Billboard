@@ -11587,6 +11587,18 @@ body.op-modal-open {
     width: 50%;
 }
 
+.login-area .logo {
+    display: none;
+    position: absolute;
+    top: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    .login-area .logo {
+        display: block;
+    }
+}
+
 .login-area .right-side {
     padding: 0 90px;
 }
