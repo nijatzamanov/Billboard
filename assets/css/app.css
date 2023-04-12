@@ -11722,8 +11722,15 @@ body.op-modal-open {
 }
 
 .register-area .logo {
+    display: none;
     position: absolute;
     top: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    .register-area .logo {
+        display: block;
+    }
 }
 
 .register-area .right-side {
