@@ -512,7 +512,7 @@
     axilInit.i();
 
     /* home page main slider */
-    var TrandingSlider = new Swiper('.tranding-slider', {
+    var TrandingSlider = new Swiper('.banner_slider-items', {
         effect: 'coverflow',
         grabCursor: true,
         centeredSlides: true,
