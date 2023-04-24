@@ -1,59 +1,11 @@
 /*---------------------------------------------
+
+Project Name: Billboards
 Description: Creative Software Agency
 Author: Aildco LLC
 Author URL: https://aildco.com/
 
-===============================================   
-STYLESHEET INDEXING
-|
-|___ Default Styles
-|	|___ Variables
-|	|___ Reset Styels
-|	|___ Typography
-|	|___ Forms Styles
-|	|___ Helper Classes 
-|
-|___ Elements Styles
-|	|___ Back To Top
-|	|___ Breadcrumb
-|	|___ Button
-|	|___ Pagination 
-|	|___ Section Heading
-|	|___ Slick 
-|
-|___Template Styles
-|	|___ About Us
-|	|___ Banner
-|	|___ Brand
-|	|___ Call To Action
-|	|___ Case Study
-|	|___ Contact
-|	|___ Counter Up
-|	|___ FAQ
-|	|___ Pricing
-|	|___ Process
-|	|___ Project
-|	|___ Service
-|	|___ Team
-|	|___ Testimonial
-|	|___  Why Choose
-|	|___  404 Error
-|
-|___Blocks Styles
-|	|___ Header Styles
-|	|___ Blog Styles
-|	|___ Footer Styles
-|
-|___Dark Style
-|
-|___Spacing
-|
-|___ END STYLESHEET INDEXING
-
 --------------------------------------------*/
-/*=======================================================================
-1. Default Styles
-=========================================================================*/
 /*-------------------------
     Variables
 -------------------------*/
@@ -10855,7 +10807,7 @@ body.op-modal-open {
     /* opacity: 80%; */
 }
 
-#tranding {
+#banner_slider {
     /* padding: 70px 50px; */
     padding: 150px 150px 0px 150px;
     background: rgba(0, 0, 0, 0.8);
