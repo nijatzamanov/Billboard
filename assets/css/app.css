@@ -11180,9 +11180,14 @@ body.op-modal-open {
 @media only screen and (max-width: 991px) {
     .what-we-do-area .what-we-do-thumb {
         margin-bottom: 30px;
+        text-align: left;
     }
 
-    .what-we-do-thumb img {
+    .what-we-do-area .what-we-do-thumb a {
+        width: 100%;
+    }
+
+    .what-we-do-area .what-we-do-thumb a img {
         width: 100%;
     }
 }
