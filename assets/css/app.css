@@ -11158,12 +11158,16 @@ body.op-modal-open {
     text-align: right;
 }
 
-@media only screen and (max-width: 991px) {
+/* @media only screen and (max-width: 991px) {
     .what-we-do-thumb {
         text-align: left;
         margin-bottom: 30px;
     }
-}
+
+    .what-we-do-thumb img {
+        width: 100%;
+    }
+} */
 
 .what-we-do-thumb img {
     display: inline-block;
@@ -11174,8 +11178,8 @@ body.op-modal-open {
 }
 
 @media only screen and (max-width: 991px) {
-    .what-we-do .what-we-do-thumb {
-        margin-bottom: 60px;
+    .what-we-do-area .what-we-do-thumb {
+        margin-bottom: 30px;
     }
 
     .what-we-do-thumb img {
